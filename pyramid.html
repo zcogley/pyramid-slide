@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    #pyramid {
-      font-family: "Courier New", monospace;
-      line-height: 0;
-    }
-  </style>
-</head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
 
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+    </style>
+</head>
 <body>
-  <div id="wholeElement">
     <h1>Pyramid Slide</h1>
 
+    <br>
 
-    <div id="pyramid">
+    <!-- <label>How high?</label>
+    <input type="text" id="height"/> -->
+    <br><br>
+    <button id="draw-button">Draw a pyramid</button>
 
-    </div>
-  </div>
+    <br><br>
 
+    <label>Brick Symbol</label>
+    <select type="" id="symbol">
+      <option>#</option>
+      <option>@</option>
+      <option>X</option>
+      <option>$</option>
+    </select>
+
+    <label>How high?</label>
+    <input type="range" name = "height" id="height" min="1" max="20">
+
+    <div id="pyramid"></div>
+
+
+    <script src="pyramid.js"></script>
 </body>
 </html>
+
+
+
+<!-- Don't worry about styles or layout until you are done with all the functionality.
+A "slider" is actually just an <input> whose type attribute is equal to "range". See here for more details.
+The slider event that you care about is oninput. See here for more details.
+Remember that a dropdown menu is just a <select> element with some <option> elements nested inside.
+The select event that you care about is onchange.
+You will need to use the following style attributes:
+margin, padding, color, background-color, border, border-radius, font-size, font-weight -->
