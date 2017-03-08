@@ -12,6 +12,9 @@ function draw() {
     drawPyramid(height, symbolStr);
 }
 
+function outputUpdate(tall) {
+	document.querySelector('#tallness').value = tall;
+}
 
 /**
  * drawPyramid
